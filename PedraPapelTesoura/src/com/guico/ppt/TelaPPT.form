@@ -91,11 +91,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Papel"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPapelActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnTesoura">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tesoura"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTesouraActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

@@ -10,9 +10,9 @@ package com.guico.ppt;
  */
 public class TelaPPT extends javax.swing.JFrame {
 
-    /**
-     * Creates new form TelaPPT
-     */
+    String ppt[] = {"Pedra", "Papel", "Tesoura"};
+    String choice;
+    
     public TelaPPT() {
         initComponents();
     }
@@ -41,8 +41,18 @@ public class TelaPPT extends javax.swing.JFrame {
         });
 
         btnPapel.setText("Papel");
+        btnPapel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPapelActionPerformed(evt);
+            }
+        });
 
         btnTesoura.setText("Tesoura");
+        btnTesoura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTesouraActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panPPTLayout = new javax.swing.GroupLayout(panPPT);
         panPPT.setLayout(panPPTLayout);
@@ -94,7 +104,18 @@ public class TelaPPT extends javax.swing.JFrame {
 
     private void btnPedraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPedraActionPerformed
         // TODO add your handling code here:
+        choice = ppt[0];
     }//GEN-LAST:event_btnPedraActionPerformed
+
+    private void btnPapelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPapelActionPerformed
+        // TODO add your handling code here:
+        choice = ppt[1];
+    }//GEN-LAST:event_btnPapelActionPerformed
+
+    private void btnTesouraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTesouraActionPerformed
+        // TODO add your handling code here:
+        choice = ppt[2];
+    }//GEN-LAST:event_btnTesouraActionPerformed
 
     /**
      * @param args the command line arguments
